@@ -1,0 +1,39 @@
+<section class="contact-us">
+    <div class="contact-us__container container">
+        <h2 class="contact-us__title">Остались вопросы? Напишите нам!</h2>
+        <p class="contact-us__subtitle">Специалист ответит через минуту</p>
+
+        <form action="" class="contact-us__form">
+            <div class="contact-us__form-wrap">
+                <p class="contact-us__input-wrap">
+                    <label for="username" class="contact-us__label visually-hidden">Ваше имя</label>
+                    <input id="username" name="username" type="text" class="contact-us__input" placeholder="Ваше имя" required>
+                </p>
+                <p class="contact-us__input-wrap">
+                    <label for="phone" class="contact-us__label visually-hidden">Телефон</label>
+                    <input id="phone" name="phone" type="tel" data-mask="+7 (___) ___ - __ - __" class="contact-us__input" placeholder="Телефон" required>
+                </p>
+                <p class="contact-us__input-wrap">
+                    <label for="email" class="contact-us__label visually-hidden">Email</label>
+                    <input id="email" name="email" type="email" class="contact-us__input" placeholder="Email" required>
+                </p>
+            </div>
+            <div class="contact-us__form-wrap contact-us__form-wrap--quest">
+                <p class="contact-us__input-wrap contact-us__input-wrap--quest">
+                    <label for="question" class="contact-us__label visually-hidden">Напишите свой вопрос</label>
+                    <input id="question" name="question" type="text" class="contact-us__input" placeholder="Напишите свой вопрос" required>
+                </p>
+                <button class="contact-us__btn btn-arrow" type="submit">
+                    Отправить
+                    <svg class="btn-arrow__icon" width="57" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#C9E7E1" d="M41 0h16v17H41z"/>
+                        <g class="btn-arrow__icon-arrow">
+                            <path d="M48.082 6.082L51 9l-3 3 .082-5.918z" fill="#009473"/>
+                            <path d="M49 9H1" stroke="#009473" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>

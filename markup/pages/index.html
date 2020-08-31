@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="page no-js" lang="ru">
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page__body">
+        %=symbols=%
+
+        {{>header/header}}
+
+        {{>hero/hero}}
+
+        {{>about-chip/about-chip}}
+
+        <div class="sections-timeline">
+            {{>installation/installation}}
+
+            {{>guarantee/guarantee}}
+
+        </div>
+
+        {{>delivery/delivery}}
+
+        {{>reviews/reviews}}
+
+        {{>contact-us/contact-us}}
+
+        {{>contacts/contacts}}
+
+        {{>footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>
