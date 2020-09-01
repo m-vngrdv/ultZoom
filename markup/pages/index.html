@@ -4,7 +4,7 @@
         {{> head/head head.defaults}}
     </head>
 
-    <body class="page__body">
+    <body class="page__body page__body--bg">
         %=symbols=%
 
         {{>header/header}}
@@ -30,8 +30,13 @@
 
         {{>footer/footer}}
 
+        {{>modal-register/modal-register}}
+
+        {{>modal-order/modal-order}}
+
         <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
         <script>svg4everybody();</script>
+        <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
         <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
     </body>
 

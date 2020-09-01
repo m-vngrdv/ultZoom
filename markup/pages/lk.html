@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="page no-js" lang="ru">
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body class="page__body">
+        %=symbols=%
+
+        <header class="header header--lk">
+            <div class="header__container container-big">
+                <a href="./index.html" class="header__logo">
+                    UltZooM
+                </a>
+        
+                <div class="header__l-menu">
+                    <a href="tel:+74993229020" class="header__phone">+7 (499) 322 90 20</a>
+        
+                    <a href="" class="header__language">RU</a>
+        
+                    <!--<button class="header__login btn-main btn-register">Вход</a>-->
+                    <div class="header__user">
+                        <img src="https://via.placeholder.com/31" alt="" class="header__user-avatar">
+                        <a href="./lk.html" class="header__user-name">Екатерина Носик</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <div class="container">
+                <div class="dashboard__wrapper">
+                    {{>sidebar/sidebar}}
+
+                    {{>lk-main-content/lk-main-content}}
+                </div>
+            </div>
+        </main>
+
+        {{>footer/footer}}
+
+        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+        <script>svg4everybody();</script>
+        <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+    </body>
+
+</html>

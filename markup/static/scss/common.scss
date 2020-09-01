@@ -13,13 +13,16 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
-    height: 100vh;
+.page__body--bg {
     background: 
         repeating-linear-gradient(90deg, rgba(239, 245, 246, 1) 0px, rgba(239, 245, 246, 1) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 18%),
         repeating-linear-gradient(180deg, rgba(239, 245, 246, 1) 0px, rgba(239, 245, 246, 1) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 360px),
         linear-gradient(90deg, rgba(246,252,252,1) 0%, rgba(246,252,252,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)
         ;
+}
+
+body {
+    height: 100vh;
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -99,4 +102,35 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;
+}
+
+
+.sections-timeline {
+    padding-top: 180px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -39px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 1130px;
+        background-color: #009473;
+    }
+}
+
+.dashboard {
+    border-top: 1px solid $green;
+    overflow: hidden;
+}
+
+.dashboard__wrapper {
+    min-height: 80vh;
+    margin: 0 -10px;
+    display: flex;
+}
+
+.dashboard-empty {
+    margin: 0
 }

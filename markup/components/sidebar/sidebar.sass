@@ -1,0 +1,36 @@
+.sidebar
+    position: relative
+    flex: 0 0 25%
+    padding-top: 20px
+    padding-right: 10px
+    padding-left: 50px
+    &::before
+        content: ''
+        position: absolute
+        top: -50%
+        right: 0
+        width: 5000px
+        height: 200vh
+        background-color: #F6FCFC
+        z-index: -1
+
+.sidebar__list
+    @include nl
+
+.sidebar__item
+    margin-bottom: 25px
+    &:last-child
+        margin-bottom: 0
+
+.sidebar__link
+    font-size: 20px
+    line-height: 27px
+    letter-spacing: 0.215em
+    text-decoration: none
+    color: #000000
+    &:hover
+        color: $green
+
+.sidebar__link-active 
+    font-weight: 700
+    color: $green

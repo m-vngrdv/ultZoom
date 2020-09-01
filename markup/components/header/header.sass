@@ -1,6 +1,9 @@
 .header
     padding-top: 25px
 
+.header--lk
+    padding-bottom: 25px
+
 .header__container
     display: flex
     justify-content: space-between
@@ -14,7 +17,9 @@
     &:hover
         color: $green
 
-.header__l-menu 
+.header__l-menu
+    display: flex
+    align-items: center
 
 .header__phone
     margin-right: 40px
@@ -49,3 +54,25 @@
 
 .header__login
     display: inline-block
+
+
+.header__user
+    display: flex
+    align-items: center
+
+.header__user-avatar
+    border-radius: 50%
+    margin-right: 10px
+
+.header__user-name
+    max-width: 250px
+    margin: 0
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    font-size: 14px
+    line-height: 16px
+    letter-spacing: 0.01em
+    text-decoration: none
+    color: #000000
+    &:hover
+        color: $green

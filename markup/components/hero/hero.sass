@@ -1,0 +1,151 @@
+.hero
+    padding-top: 65px
+
+.hero__panel
+    margin: 0 auto
+    position: relative
+    max-width: 515px
+    max-height: 516px
+    &:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) 
+        width: 186px
+        height: 186px
+        border-radius: 50%
+        background-color: #E6F0F2
+        z-index: 5
+
+.panel__button-device
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 72px
+    height: 72px
+    border: 1px solid #009473
+    border-radius: 50%
+    &::before
+        content: ''
+        position: absolute
+        top: -7.79px
+        left: -7.79px
+        width: 87px
+        height: 87px
+        border: 1px dashed #009473
+        border-radius: 50%
+    &::after
+        content: ''
+        position: absolute
+        top: -19px
+        left: -19px
+        width: 109px
+        height: 109px
+        border-radius: 50%
+        background-color: #F6FCFC
+        z-index: -1
+    &:hover
+        &::before
+            animation: 4s linear infinite dashedRotate 
+
+.panel__button-device--top
+    top: -36px
+    left: 50%
+    transform: translateX(-50%)
+
+.panel__button-device--left
+    top: 50%
+    transform: translateY(-50%)
+    left: -36px
+
+
+@keyframes dashedRotate
+    0%
+        transform: rotate(0)
+    100%
+        transform: rotate(360deg)
+        
+
+.panel__button-preview
+
+
+.panel__bg-circle
+
+/* Text */
+.panel__text-wrap
+    position: absolute
+    top: 227px
+    left: 50%
+    min-width: 600px
+    min-height: 300px
+    padding-left: 138px
+    background-color: #fff
+    z-index: 4
+
+.panel__text-device
+    display: none
+    padding-top: 17px
+
+.panel__text-device--top
+
+
+.panel__text-device--left
+
+
+.panel__text-device-active
+    display: block
+
+.panel__device-name
+    margin: 0
+    margin-bottom: 27px
+    font-weight: 700
+    font-size: 30px
+    line-height: 41px
+    letter-spacing: 0.03em
+
+.panel__device-desc,
+.panel__device-price
+    margin: 0
+    font-size: 17px
+    line-height: 23px
+    letter-spacing: 0.03em
+
+.panel__device-desc
+    margin-bottom: 14px
+
+.panel__device-price
+    margin-bottom: 28px
+
+
+/* Full Images */
+.panel__image-wrap
+    position: absolute
+    z-index: 6
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.panel__image-full
+    visibility: hidden
+    opacity: 0
+    transition: all .8s
+
+.panel__image-full--01
+    transform: translateY(-100%)
+    top: -42px
+    left: -13px
+    
+
+.panel__image-full--02
+    transform: translateX(-100%)
+    top: -33px
+    left: 28px
+
+
+.panel__image-full-active
+    position: absolute  
+    visibility: visible
+    opacity: 1
+    transform: translate(0, 0)
