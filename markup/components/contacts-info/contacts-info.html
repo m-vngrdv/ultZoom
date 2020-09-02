@@ -1,39 +1,41 @@
-<div class="contacts-info">
-    <div class="contacts-info__avatar-wrap">
-        <img src="https://via.placeholder.com/317" alt="Аватар пользователя" class="contacts-info__avatar">
-        <form action="" class="contacts-info__avatar-form">
-            <input id="useravatar" type="file">
-        </form>
-    </div>
+<div id="contacts-info" class="contacts-info dashboard-panel dashboard-panel-active">
+    <div class="contacts-info__wrap">
+        <div class="contacts-info__avatar-wrap">
+            <img src="https://via.placeholder.com/317" alt="Аватар пользователя" class="contacts-info__avatar">
+            <form action="" class="contacts-info__avatar-form">
+                <input id="useravatar" type="file">
+            </form>
+        </div>
+        
+        <div class="contacts-info__content">
+            <h2 class="contacts-info__title main-content__title">Контактная информация</h2>
     
-    <div class="contacts-info__content">
-        <h2 class="contacts-info__title main-content__title">Контактная информация</h2>
-
-        <form action="" class="contacts-info__form">
-            <p class="contacts-info__input-wrap">
+            <form action="" class="contacts-info__form">
                 <p class="contacts-info__input-wrap">
-                    <label for="username" class="contacts-info__label">Имя</label>
-                    <input type="text" class="contacts-info__input" id="username" name="username" value="Екатерина" required>
+                    <p class="contacts-info__input-wrap">
+                        <label for="username" class="contacts-info__label">Имя</label>
+                        <input type="text" class="contacts-info__input" id="username" name="username" value="Екатерина" required>
+                    </p>
+                    <p class="contacts-info__input-wrap">
+                        <label for="usersname" class="contacts-info__label">Фамилия</label>
+                        <input type="text" class="contacts-info__input" id="usersname" name="usersname" value="Носик" required>
+                    </p>
+                    <p class="contacts-info__input-wrap">
+                        <label for="userphone" class="contacts-info__label">Телефон</label>
+                        <input type="tel" class="contacts-info__input" id="userphone" name="userphone" value="+735866989555" data-mask="+7 (___) ___ - __ - __" required>
+                    </p>
+                    <p class="contacts-info__input-wrap">
+                        <label for="userpassword" class="contacts-info__label">Пароль</label>
+                        <input type="password" class="contacts-info__input" id="userpassword" name="userpassword" value="123" required>
+                    </p>
+                    <p class="contacts-info__input-wrap">
+                        <label for="useremail" class="contacts-info__label">Email</label>
+                        <input type="text" class="contacts-info__input" id="useremail" name="useremail" value="email@email.com" required>
+                    </p>
+    
+                    <button class="contacts-info__btn btn-main" type="submit">Сохранить</button>
                 </p>
-                <p class="contacts-info__input-wrap">
-                    <label for="usersname" class="contacts-info__label">Фамилия</label>
-                    <input type="text" class="contacts-info__input" id="usersname" name="usersname" value="Носик" required>
-                </p>
-                <p class="contacts-info__input-wrap">
-                    <label for="userphone" class="contacts-info__label">Телефон</label>
-                    <input type="tel" class="contacts-info__input" id="userphone" name="userphone" value="+735866989555" data-mask="+7 (___) ___ - __ - __" required>
-                </p>
-                <p class="contacts-info__input-wrap">
-                    <label for="userpassword" class="contacts-info__label">Пароль</label>
-                    <input type="password" class="contacts-info__input" id="userpassword" name="userpassword" value="123" required>
-                </p>
-                <p class="contacts-info__input-wrap">
-                    <label for="useremail" class="contacts-info__label">Email</label>
-                    <input type="text" class="contacts-info__input" id="useremail" name="useremail" value="email@email.com" required>
-                </p>
-
-                <button class="contacts-info__btn btn-main" type="submit">Сохранить</button>
-            </p>
-        </form>
+            </form>
+        </div>
     </div>
 </div>

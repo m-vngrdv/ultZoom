@@ -1,5 +1,7 @@
 .contact-us
     padding-top: 175px
+    @include _768
+        padding-top: 85px
 
 .contact-us__container 
 
@@ -21,6 +23,9 @@
     display: flex
     justify-content: space-between
     margin-bottom: 59px
+    @include _768
+        flex-wrap: wrap
+        margin-bottom: 0
 
 .contact-us__form-wrap--quest
     justify-content: flex-start
@@ -33,10 +38,17 @@
     margin-right: 15px
     &:last-child
         margin-right: 0
+    @include _768
+        margin-bottom: 35px
+        margin-right: 0
+        max-width: none
 
 .contact-us__input-wrap--quest
     max-width: 735px
     margin-right: 74px
+    @include _768
+        max-width: none
+        margin-right: 0
 
 
 .contact-us__label 

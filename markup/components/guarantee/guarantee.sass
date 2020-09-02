@@ -1,12 +1,20 @@
 .guarantee
     padding-top: 170px
+    @include _768
+        padding-top: 80px
 
 .guarantee__container
     display: flex
     justify-content: space-between
+    @include _768
+        flex-wrap: wrap
+
+
 .guarantee__image-wrap ,
 .guarantee__about 
     flex: 0 0 50%
+    @include _768
+        flex: 0 0 100%
 
 .guarantee__image-wrap 
 
@@ -19,6 +27,10 @@
     padding-top: 75px
     padding-left: 25px 
     padding-right: 73px
+    @include _768
+        padding-top: 35px
+        padding-left: 0
+        padding-right: 0
 
 .guarantee__title
     margin-bottom: 25px
@@ -27,3 +39,7 @@
     width: 100%
     margin: 0
     line-height: 22px
+
+.guarantee__lines
+    @include _768
+        display: none

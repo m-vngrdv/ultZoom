@@ -8,6 +8,8 @@
     display: flex
     justify-content: space-between
     align-items: center
+    @include _768
+        flex-wrap: wrap
 
 .footer_nooffer,
 .footer_copyright 
@@ -17,5 +19,10 @@
     max-width: 665px
     padding-right: 15px
     letter-spacing: 0.05em
+    @include _768
+        max-width: none
+        margin-bottom: 25px
+        padding-right: 0
+        
 
 .footer_copyright 

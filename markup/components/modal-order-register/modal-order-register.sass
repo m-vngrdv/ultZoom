@@ -6,6 +6,15 @@
     max-width: 485px
     padding: 130px 55px 130px 95px
     background-color: #C9E7E1
+    @include _992
+        flex: 0 0 50%
+        padding: 50px 65px
+    @include _768
+        max-width: none
+        flex: 0 0 100%
+    @include _480
+        width: 100%
+        padding: 35px 20px
 
 .modal__add-logo
     margin: 0
@@ -13,6 +22,8 @@
     font-weight: 700
     font-size: 24px
     line-height: 33px
+    @include _768
+        margin-bottom: 25px
 
 .modal__add-title
     margin: 0
@@ -31,5 +42,7 @@
     font-weight: 300
     line-height: 19px 
 
-.btn-register
-    border: none
+.modal__btn-register
+    @include _480
+        width: 100%
+        padding: 10px

@@ -1,12 +1,16 @@
 .reviews
-    padding-top: 165px
+    padding-top: 85px
 
 .reviews__container
     display: flex
+    @include _768
+        flex-wrap: wrap
 
 .reviews__about,
 .reviews__list-wrap 
     flex: 0 0 50%
+    @include _768
+        flex: 0 0 100%
 
 .reviews__about 
 
@@ -18,10 +22,14 @@
     margin: 0
     margin-bottom: 25px
     line-height: 22px
+    @include _768
+        max-width: none
 
 .reviews__list-wrap
     padding-top: 65px
     padding-left: 27px
+    @include _768
+        padding-left: 0
 
 .reviews__list
     @include nl
@@ -40,6 +48,8 @@
     height: 54px
     margin-right: 33px
     border-radius: 50%
+    @include _480
+        margin-right: 15px
 
 .reviews__item-wrap
 
@@ -47,6 +57,8 @@
     display: flex
     justify-content: space-between
     margin-bottom: 18px
+    @include _480
+        flex-wrap: wrap
 
 .reviews__name,
 .reviews__date
@@ -69,3 +81,5 @@
 
 .reviews__list-btn
     margin-left: 87px
+    @include _480
+        margin-left: 69px

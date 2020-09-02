@@ -27,12 +27,32 @@
     justify-content: center
     align-items: center
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25)
+    @include _768
+        align-items: flex-start
+
+.modal__content-wrap
+    @include _1024
+        padding: 0 15px
+    @include _768
+        flex-wrap: wrap
+        height: 100%
+        overflow-y: scroll
+        padding-top: 15px
+        padding-bottom: 15px
 
 
 .modal__main-content
     position: relative
     padding: 105px 115px 175px
     background-color: #fff
+    @include _992
+        flex: 0 0 50%
+        padding: 50px 65px
+    @include _768
+        flex: 0 0 100%
+    @include _480
+        padding: 35px 40px
+
 
 .modal__title
     margin: 0
@@ -41,6 +61,8 @@
     font-size: 24px
     line-height: 28px
     letter-spacing: 0.09em
+    @include _576
+        font-size: 20px
 
 .modal__form-order 
 
@@ -57,6 +79,10 @@
     font-weight: 300
     font-size: 16px
     line-height: 19px
+    @include _992
+        display: block
+        margin-bottom: 10px
+
 
 .modal__input
     width: 100%
@@ -79,6 +105,8 @@
     padding: 6px
     border: 1px solid #009473
     width: auto
+    @include _992
+        width: 100%
 
 .modal__input-wrap--address
     position: relative

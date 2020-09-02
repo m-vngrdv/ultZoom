@@ -3,19 +3,31 @@
     justify-content: space-between
     padding-top: 175px
     overflow: hidden
-    
+    @include _768
+        padding-top: 85px
+        flex-wrap: wrap
 
 .contacts__map,
 .contacts__wrap-content
     flex: 0 0 50%
+    @include _768
+        flex: 0 0 100%
 
 .contacts__map
     max-width: 720px
     height: 440px
+    @include _768
+        order: 2
+        max-width: none
 
 .contacts__wrap-content
     padding-top: 25px
     padding-left: 27px
+    @include _768
+        order: 1
+        margin-bottom: 15px
+        padding-left: 25px
+        padding-right: 25px
 
 .contacts__title 
     margin-bottom: 32px

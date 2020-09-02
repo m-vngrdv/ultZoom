@@ -13,20 +13,33 @@
 .about-chip__desc
     max-width: 875px
     margin-bottom: 125px
+    @include _768
+        margin-bottom: 75px
 
 .about-chip__wrap-list
     padding: 0 40px
+    @include _768
+        padding: 0
 
 .about-chip__list
     @include nl
     margin: 0 -15px
     display: flex
+    @include _768
+        flex-wrap: wrap
 
 
 .about-chip__item
     flex: 0 0 25%
     padding: 0 15px
     color: #000000
+    @include _768
+        flex: 0 0 50%
+        margin-bottom: 35px
+        &:last-child
+            margin-bottom: 0
+    @include _576
+        flex: 0 0 100%
 
 .about-chip__item-title
     margin: 0
