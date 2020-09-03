@@ -1,6 +1,16 @@
 .hero
     padding-top: 65px
-
+    @include _992
+        overflow: hidden
+        padding-bottom: 200px
+    @include _768
+        padding-bottom: 360px
+        padding-top: 0
+    @include _576
+        padding-bottom: 400px
+    @include _480
+        padding-bottom: 360px
+    
 .hero__panel
     margin: 0 auto
     position: relative
@@ -17,6 +27,8 @@
         border-radius: 50%
         background-color: #E6F0F2
         z-index: 5
+    @include _768
+        padding: 0 45px
 
 .panel__button-device
     position: absolute
@@ -27,6 +39,7 @@
     height: 72px
     border: 1px solid #009473
     border-radius: 50%
+    z-index: 1
     &::before
         content: ''
         position: absolute
@@ -54,11 +67,30 @@
     top: -36px
     left: 50%
     transform: translateX(-50%)
+    @include _1230
+        top: 50%
+        transform: translateY(-50%)
+        right: -36px
+        left: auto
+    @include _768
+        right: 20px
+    @include _480
+        top: auto
+        bottom: 10%
+        right: 0%
+        transform: translateX(-50%)
 
 .panel__button-device--left
     top: 50%
     transform: translateY(-50%)
     left: -36px
+    @include _768
+        left: 20px
+    @include _480
+        top: auto
+        bottom: 10%
+        left: 0%
+        transform: translateX(50%)
 
 
 @keyframes dashedRotate
@@ -72,6 +104,9 @@
 
 
 .panel__bg-circle
+    z-index: 10
+    @include _768
+        width: 100%
 
 /* Text */
 .panel__text-wrap
@@ -83,6 +118,21 @@
     padding-left: 138px
     background-color: #fff
     z-index: 4
+    @include _1230
+        top: auto
+        bottom: -150px
+        transform: translateX(-50%)
+        padding: 0 50px
+    @include _768
+        max-width: 100%
+        position: static
+        min-width: auto
+        transform: translateX(0)
+        padding-bottom: 25px
+    @include _480
+        padding: 0 15px 15px
+        max-width: none
+        margin: 0 -20px
 
 .panel__text-device
     display: none
@@ -98,6 +148,7 @@
     display: block
 
 .panel__device-name
+    display: inline-block
     margin: 0
     margin-bottom: 27px
     font-weight: 700
@@ -105,12 +156,25 @@
     line-height: 41px
     letter-spacing: 0.03em
 
+    overflow: hidden
+    border-right: 3px solid rgba($green, 0.75)
+    white-space: nowrap
+    @include _1024
+        border: none
+        white-space: break-spaces
+    @include _480
+        font-size: 22px
+        line-height: 28px
+
 .panel__device-desc,
 .panel__device-price
     margin: 0
     font-size: 17px
     line-height: 23px
     letter-spacing: 0.03em
+    @include _480
+        font-size: 15px
+        line-height: 20px
 
 .panel__device-desc
     margin-bottom: 14px
@@ -127,6 +191,7 @@
     left: 50%
     transform: translate(-50%, -50%)
 
+
 .panel__image-full
     visibility: hidden
     opacity: 0
@@ -136,6 +201,8 @@
     transform: translateY(-100%)
     top: -42px
     left: -13px
+    @include _1230
+        transform: translateX(100%)
     
 
 .panel__image-full--02

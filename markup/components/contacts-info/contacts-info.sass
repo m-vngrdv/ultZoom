@@ -3,9 +3,11 @@
 .contacts-info__wrap
     display: flex
     align-items: flex-start
+    @include _768
+        flex-wrap: wrap
 
 .contacts-info__avatar-wrap
-        padding: 0 10px
+    padding: 0 10px
 
 .contacts-info__avatar-form
     display: none
@@ -18,6 +20,10 @@
 
 .contacts-info__content
     padding: 25px 10px 0 27px
+    @include _768
+        width: 100%
+    @include _576
+        padding: 25px 0
 
 .contacts-info__title
     margin-bottom: 50px

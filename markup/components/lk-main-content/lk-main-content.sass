@@ -2,6 +2,13 @@
     flex: 0 0 75%
     padding: 20px 10px 0 
     border-left: 1px solid $green
+    overflow: hidden
+    @include _768
+        flex: auto
+    @include _576
+        flex: 0 0 100%
+        border-left: none
+        border-top: 1px solid $green
 
 .main-content__title
     margin: 0

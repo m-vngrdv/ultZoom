@@ -1,11 +1,16 @@
 .about-chip
     padding-top: 155px
+    @include _1230
+        padding-top: 175px
+    @include _992
+        padding-top: 35px
 
 
 .about-chip__container
     
 .about-chip__container-big
     position: relative
+    overflow: visible
 
 .about-chip__title 
 
@@ -18,14 +23,14 @@
 
 .about-chip__wrap-list
     padding: 0 40px
-    @include _768
+    @include _992
         padding: 0
 
 .about-chip__list
     @include nl
     margin: 0 -15px
     display: flex
-    @include _768
+    @include _992
         flex-wrap: wrap
 
 
@@ -33,7 +38,7 @@
     flex: 0 0 25%
     padding: 0 15px
     color: #000000
-    @include _768
+    @include _992
         flex: 0 0 50%
         margin-bottom: 35px
         &:last-child

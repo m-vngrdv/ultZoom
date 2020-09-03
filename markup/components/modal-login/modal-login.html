@@ -1,32 +1,28 @@
-<div class="modal modal-register">
+<div class="modal modal-login">
     <div class="modal__content">
         <div class="modal__content-wrap">
             <div class="modal__add-content">
                 <p class="modal__add-logo">UltZooM</p>
                 <h2 class="modal__add-title">Добро пожаловать</h2>
                 <p class="modal__add-desc">Компания Bleach Infiniter создана в 2015 году и специализируется на производстве безлимитных чипов для ламп Philips.</p>
-                <button class="modal__btn-register btn-main btn-login">Войти</button>
+                <button class="modal__btn-register btn-register btn-main">Зарегистрироваться</button>
             </div>
             <div class="modal__main-content">
                 <img src="%=static=%img/general/modal-register.jpg" alt="Добро пожаловать" class="modal__register-img">
-                <h2 class="modal__title modal__title--center">Регистрация</h2>
-
-                <form action="" class="modal__form-register modal__form">
-                    <p class="modal__input-wrap">
-                        <label for="reg-name" class="modal__label visually-hidden">Имя</label>
-                        <input id="reg-name" name="reg-name" type="text" class="modal__input" placeholder="Имя" required>
-                    </p>
-                    <p class="modal__input-wrap">
-                        <label for="reg-email" class="modal__label visually-hidden">Email</label>
-                        <input id="reg-email" name="reg-email" type="email" class="modal__input" placeholder="Email" required>
-                    </p>
-                    <p class="modal__input-wrap">
-                        <label for="reg-password" class="modal__label visually-hidden">Пароль</label>
-                        <input id="reg-password" name="reg-password" type="password" class="modal__input" placeholder="Пароль" required>
-                    </p>
-                    <button class="modal__btn btn-main" type="submit">Зарегистрироваться</button>
-                </form>
+                <h2 class="modal__title modal__title--center">Авторизация</h2>
     
+                <form action="" class="modal__form-login">
+                    <p class="modal__input-wrap">
+                        <label for="login-email" class="modal__label visually-hidden">Email</label>
+                        <input id="login-email" name="login-email" type="email" class="modal__input" placeholder="Email" required>
+                    </p>
+                    <p class="modal__input-wrap">
+                        <label for="login-password" class="modal__label visually-hidden">Пароль</label>
+                        <input id="login-password" name="login-password" type="password" class="modal__input" placeholder="Пароль" required>
+                    </p>
+                    <button class="modal__btn btn-main" type="submit">Войти</button>
+                </form>
+
                 <button class="modal-close">
                     <svg class="modal-close__icon" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.731 14.7863h-6.0396v6.817h-2.0132v-6.817H5.63867V12.514h6.03953V5.69702h2.0132V12.514h6.0396v2.2723z" fill="#929292"/></svg>
                 </button>

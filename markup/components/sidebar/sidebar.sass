@@ -13,6 +13,15 @@
         height: 200vh
         background-color: #F6FCFC
         z-index: -1
+    @include _768
+        padding-left: 10px
+    @include _576
+        flex: 0 0 100%
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 20px
+        &::before
+            display: none
 
 .sidebar__list
     @include nl
