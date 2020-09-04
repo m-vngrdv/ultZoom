@@ -10,7 +10,7 @@ function animationPreload() {
   .fromTo(".panel__bg-circle", { scale: 0 }, { scale: 1, transformOrigin: "50% 50%"}, ">")
   .from(".panel__button-device--left", { left: '50%' })
   .from(".panel__button-device--top", posTopBtn, "<")
-  .fromTo(".panel__image-wrap", { scale: 0 }, { scale: 1, transformOrigin: "50% 50%" }, "<")
+  .fromTo(".panel__image-wrap", { scale: 0 }, { scale: 1 }, "<")
 
   .fromTo(".panel__device-name", 2, {
     width: "0",
@@ -32,8 +32,6 @@ function animationPreload() {
 }
 
 window.addEventListener('resize', function(event){
-  //preloadTimeline.kill();
-  console.log(preloadTimeline.progress());
   if(window.innerWidth > 1024 && preloadTimeline.progress() == 0) {
     animationPreload();
     preloadTimeline.play();
