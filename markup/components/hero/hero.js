@@ -62,8 +62,17 @@ document.addEventListener("click", function(event) {
 
 document.addEventListener("click", function(event) {
     if(event.target.classList.contains('btn-order')) {
-        document.querySelector('.modal-order').classList.add('modal-active');
+        modal.classList.add('modal-active');
     }
   });
   
   
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

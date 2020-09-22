@@ -14,12 +14,12 @@ if(document.querySelector('.contacts__map')) {
           let placemark = new ymaps.Placemark([55.79159504755306,37.559732296295145], {
               hintContent: 'ул. Петровская, д. 23/10'
               }, {
-              iconImageHref: './static/img/assets/contacts/location.svg',
-              iconImageSize: [75, 76],
-              iconImageOffset: [-37.5, -76]
+                iconImageHref: './static/img/assets/contacts/location.svg',
+                iconImageSize: [75, 76],
+                iconImageOffset: [-37.5, -76]
               });
         
-          myMap.geoObjects.add(placemark);
+          //myMap.geoObjects.add(placemark);
         }
         isShow = true;
       }

@@ -167,7 +167,7 @@ body {
 }
 
 .dashboard {
-    border-top: 1px solid $green;
+    //border-top: 1px solid $green;
     overflow: hidden;
 }
 
@@ -195,4 +195,41 @@ body {
 .btn-register,
 .btn-login {
     border: none
+}
+
+.cart {
+    padding-bottom: 25px;
+}
+
+.cart__container {
+    min-height: 100vh;
+}
+
+.cart__title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.checkout {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+
+.woocommerce-orders-table__cell-order-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-details__wrap {
+    min-height: 100vh;
+    padding-top: 35px;
+}
+
+.order-details__list {
+    @include nl;
+}
+
+.lost-pwd {
+    min-height: 100vh;
 }

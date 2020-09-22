@@ -1,5 +1,9 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+.woocommerce a.button.btn-main,
+.woocommerce button.button.btn-main,
+.woocommerce input.button.btn-main,
+.woocommerce ul.order_details + p + form input[type="submit"],
 .btn-main {
     padding: 6px 33px;
     font-family: 'Roboto', sans-serif;
@@ -13,6 +17,9 @@
     text-decoration: none;
 }
 
+.woocommerce ul.order_details + p + form input[type="submit"] {
+    border: none;
+}
 
 .btn-arrow {
     padding: 0;
@@ -32,4 +39,11 @@
 
 .btn-arrow__icon {
     vertical-align: middle;
+}
+
+
+.btn-anchor {
+    display: block;
+    color: #000;
+    text-decoration: none;
 }
