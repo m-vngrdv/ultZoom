@@ -40,6 +40,7 @@
     border: 1px solid #009473
     border-radius: 50%
     z-index: 1
+    cursor: pointer
     &::before
         content: ''
         position: absolute
@@ -101,6 +102,8 @@
         
 
 .panel__button-preview
+    max-width: 45px
+    max-height: 45px
 
 
 .panel__bg-circle
@@ -115,6 +118,7 @@
     left: 50%
     min-width: 600px
     min-height: 300px
+    width: 100%
     padding-left: 138px
     background-color: #fff
     z-index: 4
@@ -138,30 +142,20 @@
     display: none
     padding-top: 17px
 
-.panel__text-device--top
-
-
-.panel__text-device--left
-
-
 .panel__text-device-active
     display: block
+
+.panel__device-wrap
+    position: relative
+    margin-bottom: 27px
 
 .panel__device-name
     display: inline-block
     margin: 0
-    margin-bottom: 27px
     font-weight: 700
     font-size: 30px
     line-height: 41px
     letter-spacing: 0.03em
-
-    overflow: hidden
-    border-right: 3px solid rgba($green, 0.75)
-    white-space: nowrap
-    @include _1024
-        border: none
-        white-space: break-spaces
     @include _480
         font-size: 22px
         line-height: 28px
@@ -189,8 +183,11 @@
     z-index: 6
     top: 50%
     left: 50%
-    transform: translate(-50%, -50%)
+    
     transform-origin: 50% 50%
+    line-height: 0
+    @include _1024
+        transform: translate(-50%, -50%)
 
 
 .panel__image-full
@@ -198,27 +195,26 @@
     opacity: 0
     transition: all .8s
 
-.panel__image-full--01
+.panel__image-full--top
     transform: translateY(-100%)
-    top: -42px
-    left: -13px
     @include _1230
         transform: translateX(100%)
     
 
-.panel__image-full--02
+.panel__image-full--left
     transform: translateX(-100%)
-    top: -33px
-    left: 28px
 
 
 .panel__image-full-active
-    position: absolute  
+    position: absolute
+    top: 0
+    left: 0
     visibility: visible
     opacity: 1
     transform: translate(0, 0)
 
 
 .btn-add-cart
+    display: block
     text-decoration: none
     color: #000

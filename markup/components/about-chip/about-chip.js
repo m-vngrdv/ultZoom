@@ -10,25 +10,11 @@ function animationPreload() {
   .fromTo(".panel__bg-circle", { scale: 0 }, { scale: 1, transformOrigin: "50% 50%"}, ">")
   .from(".panel__button-device--left", { left: '50%' })
   .from(".panel__button-device--top", posTopBtn, "<")
-  .fromTo(".panel__image-wrap", { scale: 0 }, { scale: 1 }, "<")
-
-  .fromTo(".panel__device-name", 2, {
-    width: "0",
-  }, {
-    width: "auto",
-    ease:  SteppedEase.config(37)
-  }, "<")
-  .fromTo(".panel__device-name", 1, {
-    "border-right-color": "rgba(0,148,115,0.75)"
-  }, {
-    "border-right-color": "rgba(0,148,115,0)",
-    repeat: -1,
-    ease:  SteppedEase.config(37)
-  }, ">")
-  .from(".panel__device-desc", {y: 100, opacity: 0}, "<")
-  .from(".panel__device-price", {y: 100, opacity: 0}, "<0.2")
-  .from(".panel__device-btn", {y: 100, opacity: 0}, "<0.2")
-  ;
+  .fromTo(".panel__image-wrap", { scaleX: 0, scaleY: 0, x: "-50%", y: "-50%"}, { scaleX: 1, scaleY: 1, x: "-50%", y: "-50%"}, "<")
+  .from(".panel__text-device-active .panel__device-name", {y: 100, opacity: 0}, "<0.2")
+  .from(".panel__text-device-active .panel__device-desc", {y: 100, opacity: 0}, "<0.2")
+  .from(".panel__text-device-active .panel__device-price", {y: 100, opacity: 0}, "<0.2")
+  .from(".panel__text-device-active .panel__device-btn", {y: 100, opacity: 0}, "<0.2");
 }
 
 window.addEventListener('resize', function(event){
@@ -62,9 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ScrollTrigger.create({
             animation: scene1,
             trigger: elem,
-            //start: "top bottom",
             start: "top bottom",
-            //end: "bottom top",
             end: "bottom top",
             scrub: 5,
         });
