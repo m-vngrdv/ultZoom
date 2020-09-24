@@ -6,7 +6,7 @@ function animationPreload() {
   preloadTimeline
   .to(".loader__circle", { width: 0, height: 0})
   .to(".loader", {display: 'none'})
-  .from(".page__body--bg .header__container", {y: -100})
+  .from(".page__body--bg .header__container", {y: -100, clearProps:"all"})
   .fromTo(".panel__bg-circle", { scale: 0 }, { scale: 1, transformOrigin: "50% 50%"}, ">")
   .from(".panel__button-device--left", { left: '50%' })
   .from(".panel__button-device--top", posTopBtn, "<")
