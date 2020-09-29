@@ -15,6 +15,9 @@
     background-color: $green;
     border-radius: 5px;
     text-decoration: none;
+    &:active {
+        background-color: $darkGreen;
+    }
 }
 
 .woocommerce ul.order_details + p + form input[type="submit"] {
@@ -46,4 +49,17 @@
     display: block;
     color: #000;
     text-decoration: none;
+}
+
+.btn-add-cart {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.btn-add-cart--main {
+    padding: 12px 55px;
+    display: inline-block;
+    color: #fff;
 }

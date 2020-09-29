@@ -20,11 +20,8 @@ html, body {
         repeating-linear-gradient(180deg, rgba(239, 245, 246, 1) 0px, rgba(239, 245, 246, 1) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 360px),
         linear-gradient(90deg, rgba(246,252,252,1) 0%, rgba(246,252,252,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%)
         ;
-    @include _992 {
-        padding-top: 0;
-    }
-
     @include _768 {
+        padding-top: 0;
         background: 
         repeating-linear-gradient(90deg, rgba(239, 245, 246, 1) 0px, rgba(239, 245, 246, 1) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 50%),
         repeating-linear-gradient(180deg, rgba(239, 245, 246, 1) 0px, rgba(239, 245, 246, 1) 1px, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0) 360px),
@@ -235,4 +232,8 @@ body {
 
 .lost-pwd {
     min-height: 100vh;
+}
+
+.page-404 {
+    height: 100vh;
 }
