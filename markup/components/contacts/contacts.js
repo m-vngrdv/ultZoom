@@ -19,7 +19,7 @@ if(document.querySelector('.contacts__map')) {
                 iconImageOffset: [-37.5, -76]
               });
         
-          //myMap.geoObjects.add(placemark);
+          myMap.geoObjects.add(placemark);
         }
         isShow = true;
       }
