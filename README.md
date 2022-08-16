@@ -1,5 +1,10 @@
 # ultZoom
-Landing page ultZoom
+Верстка (HTML/CSS/JS) landing page ultZoom.  
+
+В качестве сборщика использовался [TARS](https://github.com/tars/tars). 
+
+Для анимации использовалась библиотека [GSAP(GreenSock)](https://greensock.com/gsap/). 
+
 
 ## Project setup
 ```
